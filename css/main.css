@@ -1,28 +1,231 @@
-* {
-  box-sizing: border-box;
+/* 1. BASE: basisstijlen van de HTML-elementen */
+
+@import url('https://fonts.googleapis.com/css?family=Rochester');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.keywords {
+    font-family: 'Rochester';
+    font-size: 36px;
+    background-color:rgb(139,181,157);
+    color:#FFF;
+    text-align:center;
+    border-color: 2px solid rgb(139,181,157);
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+
+.text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 10px;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background: rgba(26,35,126 ,1) url('../assets/images/home.jpg') no-repeat center center fixed;
-  background-size: cover;
 
-  color: rgba(232,234,246 ,1);
+.text2 {
+    padding: 10px;
+    text-align: center;
 }
 
-.intro {
-  width: 90vw;
+div {
+    line-height: 24px;
+}
 
-  padding: 1rem;
-  margin-top: 1rem;
+p {
+    font-family: 'Cabin', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+}
 
-  background: rgba(41,182,246 ,1);
-  color: rgba(1,87,155 ,1);
+a {
+        text-decoration: none; /* standaard onderlijning uitschakelen */
+        color: rgb(187,24,24);
+        border-bottom: dotted 2px rgb(187,24,24);
+        padding-bottom: 2px; /* afstand vergroten tussen tekst en lijntje */
+    }
+
+a:hover {
+        /* enkel herhalen wat wijzigt tov het a-element */
+        color: rgb(20,52,64);
+    }
+
+a:active, a:visited {
+        /* enkel herhalen wat wijzigt tov het a-element */
+        color: hsl(240, 100%, 40%);
+        border-bottom:none;
+    }
+
+
+
+
+
+/* 2. COMPONENTS: onderdelen, worden in de algemene lay-out geplaatst */
+
+.button {
+    border-width: 0 0;
+    display: inline-block;
+    margin-left: 380px;
+    font-weight: bold;
+    padding: .25em .5em;
+    text-decoration: none;
+    min-width: 75px;
+    -moz-box-shadow: 5px 5px 5px #777777;
+    -webkit-box-shadow: 5px 5px 5px #777777;
+    box-shadow: 5px 5px 5px #777777;
+
+    border-color: 2px solid #ddd8de;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+.button--default,
+.button--default:active,
+.button--default:visited {
+    background-color:    rgb(139,181,157);
+    color: #FFF;
+}
+
+.button--default:hover {
+    background-color:    rgb(187,24,24);
+    color: #FFF;
+}
+
+.button--primary,
+.button--primary:active,
+.button--primary:visited {
+    background-color:    rgb(250,202,200);
+    color: #FFF;
+}
+
+.button--primary:hover {
+    background-color:    rgb(93,30,23);
+    color: #FFF;
+}
+
+.button--danger,
+.button--danger:active,
+.button--danger:visited {
+    background-color:    rgb(139,181,157);
+    color: #FFF;
+}
+
+.button--danger:hover {
+    background-color:    hsl(  0,  66%,  44%);
+    color: #FFF;
+}
+
+.button--success,
+.button--success:active,
+.button--success:visited {
+    background-color: #ddd8de;
+    color: #FFF;
+}
+
+.button--success:hover {
+    background-color:    rgb(93,30,23);
+    color: #FFF;
+}
+
+
+
+
+
+
+ul.my_unordered_list {
+        list-style-type: none;
+        margin: 0px 100px;
+        padding: 0; 
+    }
+
+li.my_unordered_list_item_ice {
+        background-image: url(../_img/bolletje.png);      
+        background-size: auto 15px; /* gewenste breedte en hoogte van de afbeelding*/
+        background-repeat: no-repeat;
+        background-position: 0 0; /* horz en vert positie */
+        line-height: 25px;
+    }
+
+
+li.my_unordered_list_item_ice {
+        background-image: url(../_img/bolletje.png);      
+        background-size: auto 15px; /* gewenste breedte en hoogte van de afbeelding*/
+        background-repeat: no-repeat;
+        background-position: 0 0; /* horz en vert positie */
+        padding-left: 60px;
+    }
+
+
+
+
+
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+
+
+
+.align {
+    text-align:center;
+}
+
+
+
+.none {
+    border-bottom: none;
+    display: block;
+    width: 500px;
+    margin-left:none;
+}
+
+.none2 {
+    border-bottom: none;
+    text-decoration: none;
+}
+
+
+.icon {
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+
+#portfolio {
+    height:60px;
+}
+
+#diensten {
+    height:60px;
+}
+
+
+#team {
+    height:60px;
+}
+
+#contact {
+    height:60px;
 }

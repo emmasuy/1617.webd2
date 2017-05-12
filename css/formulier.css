@@ -1,0 +1,66 @@
+form
+    {
+    border-width: 1px;
+
+    padding: 15px;
+    width: 1000px;
+    
+    font-family: Cabin;
+    font-size: 16px;
+    }
+
+    label
+    {
+    float: left;
+    width: 150px;
+    text-align: right;
+    
+    margin-right: 15px;
+    }
+
+    input
+    {
+    background-color: #FFF;
+    border: 2px solid #ddd8de;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+
+    font-size: 16px;
+
+    margin-bottom: 10px;
+    }
+
+    select
+    {
+    width: 240px;
+    font-size: 16px;
+    background-color: #ddd8de;
+    
+    border-color: 2px solid #FFF;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    
+    
+    margin-bottom: 10px;
+    }
+
+    textarea
+    {
+    width: 300px;
+    height: 200px;
+    background-color: #FFF;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ddd8de;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    
+    font-family: Cabin;
+    font-size: small;
+    
+    margin-bottom: 10px;
+    }
