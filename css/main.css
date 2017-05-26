@@ -151,7 +151,7 @@ ul.my_unordered_list {
     }
 
 li.my_unordered_list_item_ice {
-        background-image: url(../_img/bolletje.png);      
+        background-image: url(../assets/images/bolletje.png);      
         background-size: auto 15px; /* gewenste breedte en hoogte van de afbeelding*/
         background-repeat: no-repeat;
         background-position: 0 0; /* horz en vert positie */
